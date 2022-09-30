@@ -52,6 +52,8 @@
     
     self.btnRegisCustom.layer.cornerRadius = 15;
     self.btnRegisCustom.layer.masksToBounds = true;
+    
+    //Arriba el america
 }
 
 - (void)reconocerTap:(UITapGestureRecognizer *) sender{
