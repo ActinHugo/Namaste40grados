@@ -1,0 +1,15 @@
+//
+//  SceneDelegate.h
+//  Namaste
+//
+//  Created by Alejandro Rodas on 23/06/22.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+
+@property (strong, nonatomic) UIWindow * window;
+
+@end
+
