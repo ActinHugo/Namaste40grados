@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,36 @@
 		250FB3B128BFE8C60071624D /* brig_sche.png in Resources */ = {isa = PBXBuildFile; fileRef = 250FB3AB28BFE8C60071624D /* brig_sche.png */; };
 		251849B428B7E39400735C96 /* paquete_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 251849B328B7E39400735C96 /* paquete_img.jpg */; };
 		251849B728B7E4D900735C96 /* Paquetes.m in Sources */ = {isa = PBXBuildFile; fileRef = 251849B628B7E4D900735C96 /* Paquetes.m */; };
+		251BFC952910F6760068E20E /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC632910F6760068E20E /* FSCalendarCollectionView.m */; };
+		251BFC962910F6760068E20E /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC662910F6760068E20E /* FSCalendarDelegationProxy.m */; };
+		251BFC972910F6760068E20E /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC682910F6760068E20E /* FSCalendarDelegationFactory.m */; };
+		251BFC982910F6760068E20E /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC812910F6760068E20E /* FSCalendarCell.m */; };
+		251BFC992910F6760068E20E /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC822910F6760068E20E /* FSCalendarStickyHeader.m */; };
+		251BFC9A2910F6760068E20E /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC832910F6760068E20E /* FSCalendar.m */; };
+		251BFC9B2910F6760068E20E /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC842910F6760068E20E /* FSCalendarCollectionViewLayout.m */; };
+		251BFC9C2910F6760068E20E /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC852910F6760068E20E /* FSCalendarWeekdayView.m */; };
+		251BFC9D2910F6760068E20E /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC882910F6760068E20E /* FSCalendarSeparatorDecorationView.m */; };
+		251BFC9E2910F6760068E20E /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC8A2910F6760068E20E /* FSCalendarExtensions.m */; };
+		251BFC9F2910F6760068E20E /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC8C2910F6760068E20E /* FSCalendarConstants.m */; };
+		251BFCA02910F6760068E20E /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC8D2910F6760068E20E /* FSCalendarCalculator.m */; };
+		251BFCA12910F6760068E20E /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC8E2910F6760068E20E /* FSCalendarHeaderView.m */; };
+		251BFCA22910F6760068E20E /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC922910F6760068E20E /* FSCalendarTransitionCoordinator.m */; };
+		251BFCA42910F6760068E20E /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFC942910F6760068E20E /* FSCalendarAppearance.m */; };
+		251BFCA62911C0DE0068E20E /* calen_clases.png in Resources */ = {isa = PBXBuildFile; fileRef = 251BFCA52911C0DE0068E20E /* calen_clases.png */; };
+		251BFCA82911E7540068E20E /* linea_horarios.png in Resources */ = {isa = PBXBuildFile; fileRef = 251BFCA72911E7540068E20E /* linea_horarios.png */; };
+		251BFCAA2912FD9F0068E20E /* division.png in Resources */ = {isa = PBXBuildFile; fileRef = 251BFCA92912FD9F0068E20E /* division.png */; };
+		251BFCAD2913AAD30068E20E /* DatosHorarios.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BFCAC2913AAD30068E20E /* DatosHorarios.m */; };
+		25216AA729147980009FBB10 /* DatosDiasHorario.m in Sources */ = {isa = PBXBuildFile; fileRef = 25216AA629147980009FBB10 /* DatosDiasHorario.m */; };
+		25216AAF29148F7E009FBB10 /* gal6.png in Resources */ = {isa = PBXBuildFile; fileRef = 25216AA829148F7D009FBB10 /* gal6.png */; };
+		25216AB029148F7E009FBB10 /* gal7.png in Resources */ = {isa = PBXBuildFile; fileRef = 25216AA929148F7D009FBB10 /* gal7.png */; };
+		25216AB129148F7E009FBB10 /* gal3.png in Resources */ = {isa = PBXBuildFile; fileRef = 25216AAA29148F7D009FBB10 /* gal3.png */; };
+		25216AB229148F7E009FBB10 /* gal2.png in Resources */ = {isa = PBXBuildFile; fileRef = 25216AAB29148F7D009FBB10 /* gal2.png */; };
+		25216AB329148F7E009FBB10 /* gal4.png in Resources */ = {isa = PBXBuildFile; fileRef = 25216AAC29148F7E009FBB10 /* gal4.png */; };
+		25216AB429148F7E009FBB10 /* gal5.png in Resources */ = {isa = PBXBuildFile; fileRef = 25216AAD29148F7E009FBB10 /* gal5.png */; };
+		25216AB529148F7E009FBB10 /* gal1.png in Resources */ = {isa = PBXBuildFile; fileRef = 25216AAE29148F7E009FBB10 /* gal1.png */; };
+		25216AB729148F91009FBB10 /* galeria.png in Resources */ = {isa = PBXBuildFile; fileRef = 25216AB629148F91009FBB10 /* galeria.png */; };
+		25216AB929148FCE009FBB10 /* calend_fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = 25216AB829148FCE009FBB10 /* calend_fondo.png */; };
+		25216ABC2914BD1E009FBB10 /* Galeria.m in Sources */ = {isa = PBXBuildFile; fileRef = 25216ABB2914BD1E009FBB10 /* Galeria.m */; };
 		25285DED289991A300BB5959 /* horario_imagen.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 25285DEC289991A300BB5959 /* horario_imagen.jpeg */; };
 		25285DF228999C7400BB5959 /* Ubicanos.m in Sources */ = {isa = PBXBuildFile; fileRef = 25285DF128999C7400BB5959 /* Ubicanos.m */; };
 		25285DF52899A49F00BB5959 /* Horarios.m in Sources */ = {isa = PBXBuildFile; fileRef = 25285DF42899A49F00BB5959 /* Horarios.m */; };
@@ -95,12 +125,9 @@
 		25F75F40289918E200E01907 /* paquetes.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F75F35289918E200E01907 /* paquetes.png */; };
 		25F75F41289918E200E01907 /* salon_tradicional.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F75F36289918E200E01907 /* salon_tradicional.png */; };
 		25F75F42289918E200E01907 /* esmeralda_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F75F37289918E200E01907 /* esmeralda_off.png */; };
-		E63D44141ADF4141EC81BAD0 /* Pods_Namaste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF3C62B255DC41D9601B69A /* Pods_Namaste.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00D6960B2BA0B9FDD657FB27 /* Pods-Namaste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Namaste.debug.xcconfig"; path = "Target Support Files/Pods-Namaste/Pods-Namaste.debug.xcconfig"; sourceTree = "<group>"; };
-		0CF3C62B255DC41D9601B69A /* Pods_Namaste.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Namaste.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		250D4143287E9C1D00AAF532 /* DatosSalones.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatosSalones.h; sourceTree = "<group>"; };
 		250D4144287E9C1D00AAF532 /* DatosSalones.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatosSalones.m; sourceTree = "<group>"; };
 		250D4146287EAA3000AAF532 /* DatosClasesReservar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatosClasesReservar.h; sourceTree = "<group>"; };
@@ -115,6 +142,55 @@
 		251849B328B7E39400735C96 /* paquete_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paquete_img.jpg; sourceTree = "<group>"; };
 		251849B528B7E4D900735C96 /* Paquetes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Paquetes.h; sourceTree = "<group>"; };
 		251849B628B7E4D900735C96 /* Paquetes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Paquetes.m; sourceTree = "<group>"; };
+		251BFC632910F6760068E20E /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		251BFC642910F6760068E20E /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		251BFC652910F6760068E20E /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		251BFC662910F6760068E20E /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		251BFC672910F6760068E20E /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarExtensions.h; sourceTree = "<group>"; };
+		251BFC682910F6760068E20E /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		251BFC692910F6760068E20E /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
+		251BFC6A2910F6760068E20E /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCalculator.h; sourceTree = "<group>"; };
+		251BFC6B2910F6760068E20E /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		251BFC7E2910F6760068E20E /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
+		251BFC7F2910F6760068E20E /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
+		251BFC802910F6760068E20E /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		251BFC812910F6760068E20E /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
+		251BFC822910F6760068E20E /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		251BFC832910F6760068E20E /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
+		251BFC842910F6760068E20E /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		251BFC852910F6760068E20E /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		251BFC862910F6760068E20E /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		251BFC872910F6760068E20E /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		251BFC882910F6760068E20E /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
+		251BFC892910F6760068E20E /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		251BFC8A2910F6760068E20E /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
+		251BFC8B2910F6760068E20E /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		251BFC8C2910F6760068E20E /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstants.m; sourceTree = "<group>"; };
+		251BFC8D2910F6760068E20E /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCalculator.m; sourceTree = "<group>"; };
+		251BFC8E2910F6760068E20E /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		251BFC8F2910F6760068E20E /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		251BFC902910F6760068E20E /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
+		251BFC912910F6760068E20E /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
+		251BFC922910F6760068E20E /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		251BFC942910F6760068E20E /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
+		251BFCA52911C0DE0068E20E /* calen_clases.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calen_clases.png; sourceTree = "<group>"; };
+		251BFCA72911E7540068E20E /* linea_horarios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linea_horarios.png; sourceTree = "<group>"; };
+		251BFCA92912FD9F0068E20E /* division.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = division.png; sourceTree = "<group>"; };
+		251BFCAB2913AAD30068E20E /* DatosHorarios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatosHorarios.h; sourceTree = "<group>"; };
+		251BFCAC2913AAD30068E20E /* DatosHorarios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatosHorarios.m; sourceTree = "<group>"; };
+		25216AA529147980009FBB10 /* DatosDiasHorario.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatosDiasHorario.h; sourceTree = "<group>"; };
+		25216AA629147980009FBB10 /* DatosDiasHorario.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatosDiasHorario.m; sourceTree = "<group>"; };
+		25216AA829148F7D009FBB10 /* gal6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal6.png; sourceTree = "<group>"; };
+		25216AA929148F7D009FBB10 /* gal7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal7.png; sourceTree = "<group>"; };
+		25216AAA29148F7D009FBB10 /* gal3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal3.png; sourceTree = "<group>"; };
+		25216AAB29148F7D009FBB10 /* gal2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal2.png; sourceTree = "<group>"; };
+		25216AAC29148F7E009FBB10 /* gal4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal4.png; sourceTree = "<group>"; };
+		25216AAD29148F7E009FBB10 /* gal5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal5.png; sourceTree = "<group>"; };
+		25216AAE29148F7E009FBB10 /* gal1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gal1.png; sourceTree = "<group>"; };
+		25216AB629148F91009FBB10 /* galeria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galeria.png; sourceTree = "<group>"; };
+		25216AB829148FCE009FBB10 /* calend_fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calend_fondo.png; sourceTree = "<group>"; };
+		25216ABA2914BD1E009FBB10 /* Galeria.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Galeria.h; sourceTree = "<group>"; };
+		25216ABB2914BD1E009FBB10 /* Galeria.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Galeria.m; sourceTree = "<group>"; };
 		25285DEC289991A300BB5959 /* horario_imagen.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horario_imagen.jpeg; sourceTree = "<group>"; };
 		25285DF028999C7400BB5959 /* Ubicanos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ubicanos.h; sourceTree = "<group>"; };
 		25285DF128999C7400BB5959 /* Ubicanos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ubicanos.m; sourceTree = "<group>"; };
@@ -130,9 +206,9 @@
 		253FA52C28AC14B9008B0A3D /* Principal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Principal.m; sourceTree = "<group>"; };
 		253FA52E28AC1C9B008B0A3D /* boton_caliente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boton_caliente.png; sourceTree = "<group>"; };
 		253FA52F28AC1C9B008B0A3D /* boton_tradicional.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boton_tradicional.png; sourceTree = "<group>"; };
-		2541B007287F28E600AE5C23 /* icono_qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icono_qr.png; path = ../../../../../../Downloads/icono_qr.png; sourceTree = "<group>"; };
-		2541B008287F28E600AE5C23 /* icono_reservar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icono_reservar.png; path = ../../../../../../Downloads/icono_reservar.png; sourceTree = "<group>"; };
-		2541B009287F28E600AE5C23 /* icono_clases.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icono_clases.png; path = ../../../../../../Downloads/icono_clases.png; sourceTree = "<group>"; };
+		2541B007287F28E600AE5C23 /* icono_qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_qr.png; sourceTree = "<group>"; };
+		2541B008287F28E600AE5C23 /* icono_reservar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_reservar.png; sourceTree = "<group>"; };
+		2541B009287F28E600AE5C23 /* icono_clases.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_clases.png; sourceTree = "<group>"; };
 		25436A02287888730062CF5C /* sylv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sylv.png; sourceTree = "<group>"; };
 		25436A03287888730062CF5C /* am.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = am.png; sourceTree = "<group>"; };
 		25436A04287888730062CF5C /* lau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lau.png; sourceTree = "<group>"; };
@@ -149,8 +225,8 @@
 		2552AE6A28AE1A03005FFD82 /* NuestrasClases.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NuestrasClases.m; sourceTree = "<group>"; };
 		2558774B287A364F00B63F7E /* TabReservar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabReservar.h; sourceTree = "<group>"; };
 		2558774C287A364F00B63F7E /* TabReservar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabReservar.m; sourceTree = "<group>"; };
-		2558774E287A388C00B63F7E /* calendario_salon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendario_salon.png; path = ../../../../../../Downloads/calendario_salon.png; sourceTree = "<group>"; };
-		2558774F287A388C00B63F7E /* flecha_salon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flecha_salon.png; path = ../../../../../../Downloads/flecha_salon.png; sourceTree = "<group>"; };
+		2558774E287A388C00B63F7E /* calendario_salon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendario_salon.png; sourceTree = "<group>"; };
+		2558774F287A388C00B63F7E /* flecha_salon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flecha_salon.png; sourceTree = "<group>"; };
 		25587752287C839F00B63F7E /* CcClases.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CcClases.h; sourceTree = "<group>"; };
 		25587753287C839F00B63F7E /* CcClases.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CcClases.m; sourceTree = "<group>"; };
 		256F8F292876B95B00AC93A6 /* AltaUsuarios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AltaUsuarios.h; sourceTree = "<group>"; };
@@ -161,7 +237,7 @@
 		2586D4C628DCBED0008CDADB /* hot_rocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hot_rocket.png; sourceTree = "<group>"; };
 		2587AE0B28690F4200B8C5BC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		2587AE0C28690F4200B8C5BC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		258E8E3528C3E6C300846711 /* trx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trx.png; path = ../../../../../../Downloads/trx.png; sourceTree = "<group>"; };
+		258E8E3528C3E6C300846711 /* trx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trx.png; sourceTree = "<group>"; };
 		259F1DA52864C4AD00925947 /* Namaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Namaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		259F1DA82864C4AD00925947 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		259F1DA92864C4AD00925947 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -185,11 +261,11 @@
 		25AA79B228BD136D0076744D /* horas.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horas.jpeg; sourceTree = "<group>"; };
 		25B3855A28A38C33004EFA30 /* waze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waze.png; sourceTree = "<group>"; };
 		25B3855B28A38C33004EFA30 /* nuestra_clase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nuestra_clase.png; sourceTree = "<group>"; };
-		25B3855C28A38C33004EFA30 /* img_solo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_solo.png; path = "../../../../../../Downloads/ios 3/img_solo.png"; sourceTree = "<group>"; };
+		25B3855C28A38C33004EFA30 /* img_solo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_solo.png; sourceTree = "<group>"; };
 		25B3855D28A38C33004EFA30 /* conocenos_fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conocenos_fondo.png; sourceTree = "<group>"; };
 		25B3855E28A38C33004EFA30 /* interlomas_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interlomas_off.png; sourceTree = "<group>"; };
 		25B3855F28A38C33004EFA30 /* img_qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_qr.png; sourceTree = "<group>"; };
-		25B3856028A38C33004EFA30 /* login_fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_fondo.png; path = "../../../../../../Downloads/ios 3/login_fondo.png"; sourceTree = "<group>"; };
+		25B3856028A38C33004EFA30 /* login_fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_fondo.png; sourceTree = "<group>"; };
 		25B3856128A38C33004EFA30 /* conocenos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conocenos.png; sourceTree = "<group>"; };
 		25B3856428A38C34004EFA30 /* maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maps.png; sourceTree = "<group>"; };
 		25B3856528A38C34004EFA30 /* interlomas_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interlomas_on.png; sourceTree = "<group>"; };
@@ -212,7 +288,6 @@
 		25F75F35289918E200E01907 /* paquetes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paquetes.png; sourceTree = "<group>"; };
 		25F75F36289918E200E01907 /* salon_tradicional.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salon_tradicional.png; sourceTree = "<group>"; };
 		25F75F37289918E200E01907 /* esmeralda_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = esmeralda_off.png; sourceTree = "<group>"; };
-		80C6F840020CB4B6ABB3951F /* Pods-Namaste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Namaste.release.xcconfig"; path = "Target Support Files/Pods-Namaste/Pods-Namaste.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,13 +295,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E63D44141ADF4141EC81BAD0 /* Pods_Namaste.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		251BFC622910F6760068E20E /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				251BFC632910F6760068E20E /* FSCalendarCollectionView.m */,
+				251BFC642910F6760068E20E /* FSCalendarWeekdayView.h */,
+				251BFC652910F6760068E20E /* FSCalendarCollectionViewLayout.h */,
+				251BFC662910F6760068E20E /* FSCalendarDelegationProxy.m */,
+				251BFC672910F6760068E20E /* FSCalendarExtensions.h */,
+				251BFC682910F6760068E20E /* FSCalendarDelegationFactory.m */,
+				251BFC692910F6760068E20E /* FSCalendarSeparatorDecorationView.h */,
+				251BFC6A2910F6760068E20E /* FSCalendarCalculator.h */,
+				251BFC6B2910F6760068E20E /* FSCalendarHeaderView.h */,
+				251BFC7E2910F6760068E20E /* FSCalendarConstants.h */,
+				251BFC7F2910F6760068E20E /* FSCalendarAppearance.h */,
+				251BFC802910F6760068E20E /* FSCalendarTransitionCoordinator.h */,
+				251BFC812910F6760068E20E /* FSCalendarCell.m */,
+				251BFC822910F6760068E20E /* FSCalendarStickyHeader.m */,
+				251BFC832910F6760068E20E /* FSCalendar.m */,
+				251BFC842910F6760068E20E /* FSCalendarCollectionViewLayout.m */,
+				251BFC852910F6760068E20E /* FSCalendarWeekdayView.m */,
+				251BFC862910F6760068E20E /* FSCalendarCollectionView.h */,
+				251BFC872910F6760068E20E /* FSCalendarDynamicHeader.h */,
+				251BFC882910F6760068E20E /* FSCalendarSeparatorDecorationView.m */,
+				251BFC892910F6760068E20E /* FSCalendarDelegationFactory.h */,
+				251BFC8A2910F6760068E20E /* FSCalendarExtensions.m */,
+				251BFC8B2910F6760068E20E /* FSCalendarDelegationProxy.h */,
+				251BFC8C2910F6760068E20E /* FSCalendarConstants.m */,
+				251BFC8D2910F6760068E20E /* FSCalendarCalculator.m */,
+				251BFC8E2910F6760068E20E /* FSCalendarHeaderView.m */,
+				251BFC8F2910F6760068E20E /* FSCalendarStickyHeader.h */,
+				251BFC902910F6760068E20E /* FSCalendar.h */,
+				251BFC912910F6760068E20E /* FSCalendarCell.h */,
+				251BFC922910F6760068E20E /* FSCalendarTransitionCoordinator.m */,
+				251BFC942910F6760068E20E /* FSCalendarAppearance.m */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
 		25587755287D1CB000B63F7E /* Calendario */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,8 +353,6 @@
 				2552AE6728ADD5F8005FFD82 /* Assets.xcassets */,
 				259F1DA72864C4AD00925947 /* Namaste */,
 				259F1DA62864C4AD00925947 /* Products */,
-				E152DE247DCC5827ED36CBB7 /* Pods */,
-				30B80EF723C7C6920451E07C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,6 +367,7 @@
 		259F1DA72864C4AD00925947 /* Namaste */ = {
 			isa = PBXGroup;
 			children = (
+				251BFC622910F6760068E20E /* FSCalendar */,
 				25587755287D1CB000B63F7E /* Calendario */,
 				259F1DE32864C78000925947 /* Imagenes */,
 				25B3C0992870DB5400D992A1 /* Tabs */,
@@ -268,6 +379,8 @@
 				259F1DAB2864C4AD00925947 /* SceneDelegate.h */,
 				259F1DAC2864C4AD00925947 /* SceneDelegate.m */,
 				259F1DAE2864C4AD00925947 /* ViewController.h */,
+				25216AA529147980009FBB10 /* DatosDiasHorario.h */,
+				25216AA629147980009FBB10 /* DatosDiasHorario.m */,
 				259F1DAF2864C4AD00925947 /* ViewController.m */,
 				259F1DB12864C4AD00925947 /* Main.storyboard */,
 				253FA52B28AC14B9008B0A3D /* Principal.h */,
@@ -287,6 +400,8 @@
 				25285DF128999C7400BB5959 /* Ubicanos.m */,
 				25285DF32899A49F00BB5959 /* Horarios.h */,
 				25285DF42899A49F00BB5959 /* Horarios.m */,
+				251BFCAB2913AAD30068E20E /* DatosHorarios.h */,
+				251BFCAC2913AAD30068E20E /* DatosHorarios.m */,
 				25285DFA2899BD2800BB5959 /* Salones.h */,
 				25285DFB2899BD2800BB5959 /* Salones.m */,
 				253FA52828AB8045008B0A3D /* PdfVista.h */,
@@ -295,6 +410,8 @@
 				2552AE6A28AE1A03005FFD82 /* NuestrasClases.m */,
 				25BAC79F28AEA0780058C316 /* ObjetoClase.h */,
 				25BAC7A028AEA0780058C316 /* ObjetoClase.m */,
+				25216ABA2914BD1E009FBB10 /* Galeria.h */,
+				25216ABB2914BD1E009FBB10 /* Galeria.m */,
 			);
 			path = Namaste;
 			sourceTree = "<group>";
@@ -302,9 +419,20 @@
 		259F1DE32864C78000925947 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				251BFCA52911C0DE0068E20E /* calen_clases.png */,
+				25216AAE29148F7E009FBB10 /* gal1.png */,
+				25216AAB29148F7D009FBB10 /* gal2.png */,
+				25216AAA29148F7D009FBB10 /* gal3.png */,
+				25216AAC29148F7E009FBB10 /* gal4.png */,
+				25216AAD29148F7E009FBB10 /* gal5.png */,
+				25216AA829148F7D009FBB10 /* gal6.png */,
+				25216AA929148F7D009FBB10 /* gal7.png */,
 				2586D4C528DCBECF008CDADB /* hatha.png */,
+				25216AB829148FCE009FBB10 /* calend_fondo.png */,
+				251BFCA72911E7540068E20E /* linea_horarios.png */,
 				2586D4C628DCBED0008CDADB /* hot_rocket.png */,
 				250FB3AB28BFE8C60071624D /* brig_sche.png */,
+				25216AB629148F91009FBB10 /* galeria.png */,
 				258E8E3528C3E6C300846711 /* trx.png */,
 				250FB3A828BFE8C60071624D /* juan_cald.png */,
 				250FB3A728BFE8C60071624D /* laura.png */,
@@ -312,6 +440,7 @@
 				250FB3A628BFE8C60071624D /* sylvia_mons.png */,
 				250FB3AA28BFE8C60071624D /* yuri_cien.png */,
 				250FB3A428BFE8B90071624D /* adri_gari_vaz.png */,
+				251BFCA92912FD9F0068E20E /* division.png */,
 				251849B328B7E39400735C96 /* paquete_img.jpg */,
 				253FA52E28AC1C9B008B0A3D /* boton_caliente.png */,
 				253FA52F28AC1C9B008B0A3D /* boton_tradicional.png */,
@@ -394,23 +523,6 @@
 			path = DialogoProgreso;
 			sourceTree = "<group>";
 		};
-		30B80EF723C7C6920451E07C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0CF3C62B255DC41D9601B69A /* Pods_Namaste.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E152DE247DCC5827ED36CBB7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				00D6960B2BA0B9FDD657FB27 /* Pods-Namaste.debug.xcconfig */,
-				80C6F840020CB4B6ABB3951F /* Pods-Namaste.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -418,11 +530,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 259F1DBE2864C4B800925947 /* Build configuration list for PBXNativeTarget "Namaste" */;
 			buildPhases = (
-				8789374ABF60EB30B49CC94F /* [CP] Check Pods Manifest.lock */,
 				259F1DA12864C4AD00925947 /* Sources */,
 				259F1DA22864C4AD00925947 /* Frameworks */,
 				259F1DA32864C4AD00925947 /* Resources */,
-				B495F4B52B66B260C309F501 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -469,6 +579,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				251BFCA82911E7540068E20E /* linea_horarios.png in Resources */,
+				25216AAF29148F7E009FBB10 /* gal6.png in Resources */,
+				25216AB129148F7E009FBB10 /* gal3.png in Resources */,
 				259F1DDC2864C76D00925947 /* icono_reservar_off.png in Resources */,
 				25B3856728A38C34004EFA30 /* waze.png in Resources */,
 				25587751287A388C00B63F7E /* flecha_salon.png in Resources */,
@@ -477,10 +590,13 @@
 				2552AE5F28AD8DDE005FFD82 /* hot_vinyasa.png in Resources */,
 				25F75F3C289918E200E01907 /* palmas_off.png in Resources */,
 				259F1DD72864C76D00925947 /* fondo_gris_blanco.png in Resources */,
+				25216AB729148F91009FBB10 /* galeria.png in Resources */,
 				2541B00C287F28E600AE5C23 /* icono_clases.png in Resources */,
+				25216AB529148F7E009FBB10 /* gal1.png in Resources */,
 				25F75F39289918E200E01907 /* esmeralda_on.png in Resources */,
 				25B3856C28A38C34004EFA30 /* img_qr.png in Resources */,
 				250FB3AC28BFE8C60071624D /* sylvia_mons.png in Resources */,
+				25216AB929148FCE009FBB10 /* calend_fondo.png in Resources */,
 				25B3857228A38C34004EFA30 /* interlomas_on.png in Resources */,
 				25285DED289991A300BB5959 /* horario_imagen.jpeg in Resources */,
 				2552AE6228AD8DDE005FFD82 /* yoga_kids.png in Resources */,
@@ -492,11 +608,15 @@
 				250FB3AE28BFE8C60071624D /* juan_cald.png in Resources */,
 				25F75F3D289918E200E01907 /* logout.png in Resources */,
 				250FB3A528BFE8B90071624D /* adri_gari_vaz.png in Resources */,
+				25216AB429148F7E009FBB10 /* gal5.png in Resources */,
 				2552AE6428AD8DDE005FFD82 /* yoga_wheel.png in Resources */,
 				25B3856E28A38C34004EFA30 /* conocenos.png in Resources */,
 				253FA52728AB5AB5008B0A3D /* conocenos_fondo_solo.png in Resources */,
 				25436A07287888730062CF5C /* lau.png in Resources */,
+				25216AB229148F7E009FBB10 /* gal2.png in Resources */,
 				25B3857128A38C34004EFA30 /* maps.png in Resources */,
+				251BFCAA2912FD9F0068E20E /* division.png in Resources */,
+				251BFCA62911C0DE0068E20E /* calen_clases.png in Resources */,
 				25F75F41289918E200E01907 /* salon_tradicional.png in Resources */,
 				2586D4C828DCBED0008CDADB /* hot_rocket.png in Resources */,
 				259F1DE02864C76D00925947 /* imag_chica_redondeado.png in Resources */,
@@ -508,6 +628,7 @@
 				25B3856D28A38C34004EFA30 /* login_fondo.png in Resources */,
 				2586D4C728DCBED0008CDADB /* hatha.png in Resources */,
 				2552AE6328AD8DDE005FFD82 /* s_tradicional.png in Resources */,
+				25216AB329148F7E009FBB10 /* gal4.png in Resources */,
 				250FB3B128BFE8C60071624D /* brig_sche.png in Resources */,
 				259F1DD92864C76D00925947 /* men｣.png in Resources */,
 				253FA53128AC1C9C008B0A3D /* boton_tradicional.png in Resources */,
@@ -519,6 +640,7 @@
 				259F1DD52864C76D00925947 /* icono_qr_off.png in Resources */,
 				25B3856B28A38C34004EFA30 /* interlomas_off.png in Resources */,
 				251849B428B7E39400735C96 /* paquete_img.jpg in Resources */,
+				25216AB029148F7E009FBB10 /* gal7.png in Resources */,
 				2552AE5E28AD8DDE005FFD82 /* s_caliente.png in Resources */,
 				25F75F42289918E200E01907 /* esmeralda_off.png in Resources */,
 				250FB3AF28BFE8C60071624D /* olga_belichko.png in Resources */,
@@ -540,74 +662,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		8789374ABF60EB30B49CC94F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Namaste-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B495F4B52B66B260C309F501 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Namaste/Pods-Namaste-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Namaste/Pods-Namaste-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Namaste/Pods-Namaste-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		259F1DA12864C4AD00925947 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				251BFCA42910F6760068E20E /* FSCalendarAppearance.m in Sources */,
+				251BFC9B2910F6760068E20E /* FSCalendarCollectionViewLayout.m in Sources */,
 				25BAC7A128AEA0780058C316 /* ObjetoClase.m in Sources */,
+				251BFC992910F6760068E20E /* FSCalendarStickyHeader.m in Sources */,
 				25B3857628A642E9004EFA30 /* Conocenos.m in Sources */,
+				25216AA729147980009FBB10 /* DatosDiasHorario.m in Sources */,
 				25B3C08F2870CF3A00D992A1 /* TabQr.m in Sources */,
 				25285DF228999C7400BB5959 /* Ubicanos.m in Sources */,
+				251BFC952910F6760068E20E /* FSCalendarCollectionView.m in Sources */,
 				250D4148287EAA3000AAF532 /* DatosClasesReservar.m in Sources */,
 				250D4145287E9C1D00AAF532 /* DatosSalones.m in Sources */,
 				259F1DB02864C4AD00925947 /* ViewController.m in Sources */,
+				251BFC9D2910F6760068E20E /* FSCalendarSeparatorDecorationView.m in Sources */,
 				253FA52D28AC14B9008B0A3D /* Principal.m in Sources */,
 				2552AE6B28AE1A03005FFD82 /* NuestrasClases.m in Sources */,
 				25587754287C839F00B63F7E /* CcClases.m in Sources */,
 				2570DFA5287393CA00F79F92 /* DatosClases.m in Sources */,
+				25216ABC2914BD1E009FBB10 /* Galeria.m in Sources */,
 				259F1DAA2864C4AD00925947 /* AppDelegate.m in Sources */,
+				251BFC972910F6760068E20E /* FSCalendarDelegationFactory.m in Sources */,
 				2558774D287A364F00B63F7E /* TabReservar.m in Sources */,
 				253FA52A28AB8045008B0A3D /* PdfVista.m in Sources */,
+				251BFC962910F6760068E20E /* FSCalendarDelegationProxy.m in Sources */,
+				251BFCA02910F6760068E20E /* FSCalendarCalculator.m in Sources */,
+				251BFCA12910F6760068E20E /* FSCalendarHeaderView.m in Sources */,
+				251BFCA22910F6760068E20E /* FSCalendarTransitionCoordinator.m in Sources */,
+				251BFC9E2910F6760068E20E /* FSCalendarExtensions.m in Sources */,
 				25285DFC2899BD2800BB5959 /* Salones.m in Sources */,
 				251849B728B7E4D900735C96 /* Paquetes.m in Sources */,
 				256F8F2B2876B95B00AC93A6 /* AltaUsuarios.m in Sources */,
+				251BFC9C2910F6760068E20E /* FSCalendarWeekdayView.m in Sources */,
+				251BFC9F2910F6760068E20E /* FSCalendarConstants.m in Sources */,
 				2587AE0D28690F4200B8C5BC /* MBProgressHUD.m in Sources */,
+				251BFC9A2910F6760068E20E /* FSCalendar.m in Sources */,
 				25285DF52899A49F00BB5959 /* Horarios.m in Sources */,
 				259F1DBB2864C4B800925947 /* main.m in Sources */,
+				251BFCAD2913AAD30068E20E /* DatosHorarios.m in Sources */,
 				25B3C0932870D2E800D992A1 /* TabClases.m in Sources */,
+				251BFC982910F6760068E20E /* FSCalendarCell.m in Sources */,
 				259F1DAD2864C4AD00925947 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -748,7 +846,6 @@
 		};
 		259F1DBF2864C4B800925947 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00D6960B2BA0B9FDD657FB27 /* Pods-Namaste.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -767,7 +864,6 @@
 		};
 		259F1DC02864C4B800925947 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80C6F840020CB4B6ABB3951F /* Pods-Namaste.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

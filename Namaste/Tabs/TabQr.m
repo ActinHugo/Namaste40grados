@@ -6,9 +6,11 @@
 //
 
 #import "TabQr.h"
-#import "UIImage+MDQRCode.h"
+//#import "UIImage+MDQRCode.h"
 #import "Salones.h"
 #import "MBProgressHUD.h"
+
+
 
 
 @interface TabQr ()
@@ -28,7 +30,16 @@
     menuAbierto = NO;
     [self.lbNombUsu setText:[[NSUserDefaults standardUserDefaults] objectForKey:@"NOMBRE"]];
     
-    self.ivQr.image = [UIImage mdQRCodeForString:[[NSUserDefaults standardUserDefaults] objectForKey:@"ID"] size:self.ivQr.bounds.size.width fillColor:[UIColor darkGrayColor]];
+    
+    CIImage *input = [self createQRForString:[[NSUserDefaults standardUserDefaults] objectForKey:@"ID"]]; // input image is 100 X 100
+    CGAffineTransform transform = CGAffineTransformMakeScale(11.0f, 11.0f);
+    CIImage *output = [input imageByApplyingTransform: transform];
+    self.ivQr.image =
+    [[UIImage alloc]initWithCIImage:output];   //self.ivQr.image = [[UIImage alloc]initWithCIImage:[self createQRForString:[[NSUserDefaults standardUserDefaults] objectForKey:@"ID"]]];
+    
+    //[self.ivQr.image = [UIImage mdQRCodeForString:[[NSUserDefaults standardUserDefaults] objectForKey:@"ID"] size:self.ivQr.bounds.size.width fillColor:[UIColor darkGrayColor]];
+    
+    //ff
     
     //UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.viewMenu.bounds byRoundingCorners:( UIRectCornerBottomLeft | UIRectCornerBottomRight) cornerRadii:CGSizeMake(20.0, 20.0)];
     
@@ -50,6 +61,7 @@
     [arregloMenu addObject:@"Nuestras clases"];
     [arregloMenu addObject:@"Salones"];
     [arregloMenu addObject:@"Ubícanos"];
+    [arregloMenu addObject:@"Galería"];
     [arregloMenu addObject:@"Log out"];
     
     self.viewMenu.backgroundColor = [UIColor whiteColor];
@@ -70,9 +82,16 @@
     
 }
 
+- (CIImage *)createQRForString:(NSString *)qrString {
+    NSData *stringData = [qrString dataUsingEncoding: NSISOLatin1StringEncoding];
+
+    CIFilter *qrFilter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+    [qrFilter setValue:stringData forKey:@"inputMessage"];
+
+    return qrFilter.outputImage;
+}
+
 -(void)menuCustom{
-    
-    
     
     [UIView transitionWithView:self.viewFondo duration:0.5 options:UIViewAnimationOptionTransitionCrossDissolve animations:^(void){
             [self.viewFondo setHidden:NO];
@@ -179,6 +198,11 @@
         [self performSegueWithIdentifier:@"seguePaquete" sender:self];
         
 
+    }else if([[arregloMenu objectAtIndex:indexPath.row] isEqual:@"Galería"]){
+        
+        [self performSegueWithIdentifier:@"segueGale" sender:self];
+        
+
     }else if([[arregloMenu objectAtIndex:indexPath.row] isEqual:@"Log out"]){
         
         //exit(0);
@@ -242,6 +266,10 @@
         
         cell.imageView.image = [UIImage imageNamed:@"ubicanos"];
         
+    }else if([[arregloMenu objectAtIndex:indexPath.row] isEqual:@"Galería"]){
+        
+        cell.imageView.image = [UIImage imageNamed:@"galeria.png"];
+        
     }else{
         
         cell.imageView.image = [UIImage imageNamed:@"logout"];
@@ -252,6 +280,9 @@
     return cell;
 }
 
+
+- (IBAction)btnCalen:(id)sender {
+}
 
 - (IBAction)esconderMenu:(id)sender{
     
@@ -283,6 +314,7 @@
     [self menuCustom];
     
 }
+
 
 #pragma mark - Metodos de vista
 

@@ -61,6 +61,7 @@
     [arregloMenu addObject:@"Nuestras clases"];
     [arregloMenu addObject:@"Salones"];
     [arregloMenu addObject:@"Ubícanos"];
+    [arregloMenu addObject:@"Galería"];
     [arregloMenu addObject:@"Log out"];
     
     self.viewMenu.backgroundColor = [UIColor whiteColor];
@@ -426,6 +427,11 @@
             [self performSegueWithIdentifier:@"seguePaquete" sender:self];
             
 
+        }else if([[arregloMenu objectAtIndex:indexPath.row] isEqual:@"Galería"]){
+            
+            [self performSegueWithIdentifier:@"segueGale" sender:self];
+            
+
         }else if([[arregloMenu objectAtIndex:indexPath.row] isEqual:@"Log out"]){
             
             //exit(0);
@@ -508,6 +514,10 @@
         }else if([[arregloMenu objectAtIndex:indexPath.row] isEqual:@"Ubícanos"]){
             
             cell.imageView.image = [UIImage imageNamed:@"ubicanos"];
+            
+        }else if([[arregloMenu objectAtIndex:indexPath.row] isEqual:@"Galería"]){
+            
+            cell.imageView.image = [UIImage imageNamed:@"galeria.png"];
             
         }else{
             
@@ -599,7 +609,6 @@
     self.dpFecha.preferredDatePickerStyle = UIDatePickerStyleInline;
     self.dpFecha.translatesAutoresizingMaskIntoConstraints = false;
     
-    
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDate *currentDate = [NSDate date];
     NSDateComponents *comps = [[NSDateComponents alloc] init];
@@ -608,6 +617,10 @@
     [comps setDay:0];
     NSDate *minDate = [calendar dateByAddingComponents:comps toDate:currentDate options:0];
 
+    
+    
+    
+    
     [self.dpFecha setMinimumDate:minDate];
     [self.dpFecha setMaximumDate:maxDate];
     
@@ -626,7 +639,7 @@
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
     //[alertController setValue:controller forKey:@"contentViewController"];
     
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancelar" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancelar" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
 
     }];
     [alertController addAction:cancelAction];

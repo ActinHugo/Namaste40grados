@@ -246,8 +246,8 @@
     
     if ([self.nombre.text stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]].length != 0 &&
         [self.correo.text stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]].length != 0 &&
-        [self.pass.text stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]].length != 0 &&
-        [self.telefono.text stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]].length != 0) {
+        [self.pass.text stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]].length != 0) {//&&
+        //[self.telefono.text stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]].length != 0) {
         
         
         [self registrarUsuario];

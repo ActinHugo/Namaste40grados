@@ -10,11 +10,17 @@
 #import "DatosClases.h"
 #import "MBProgressHUD.h"
 
+
+
 @interface TabClases (){
     
+    NSMutableArray* maFiltroClases;
     NSMutableArray* maListaClases;
     NSMutableArray* arregloMenu;
     bool menuAbierto;
+    NSDate *maxDate;
+    NSDate *minDate;
+    NSMutableArray* arregloEventos;
 }
 
 @end
@@ -23,6 +29,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.dateFormatter = [[NSDateFormatter alloc]init];
+    self.dateFormatter.dateFormat = @"dd/MM/yy";
+    
+    arregloEventos = [[NSMutableArray alloc] initWithCapacity:5];
     
     maListaClases = [[NSMutableArray alloc]initWithCapacity:5];
     [self.lbNomUsu setText:[[NSUserDefaults standardUserDefaults] objectForKey:@"NOMBRE"]];
@@ -38,6 +49,7 @@
     [arregloMenu addObject:@"Nuestras clases"];
     [arregloMenu addObject:@"Salones"];
     [arregloMenu addObject:@"Ubícanos"];
+    [arregloMenu addObject:@"Galería"];
     [arregloMenu addObject:@"Log out"];
     
     self.viewMenu.backgroundColor = [UIColor whiteColor];
@@ -46,6 +58,14 @@
     
     //[self llenarLista];
     //[self descargaDatos];
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDate *currentDate = [NSDate date];
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    [comps setDay:7];
+    maxDate = [calendar dateByAddingComponents:comps toDate:currentDate options:0];
+    [comps setDay:0];
+    minDate = [calendar dateByAddingComponents:comps toDate:currentDate options:0];
 
 }
 
@@ -178,6 +198,9 @@
                     clase.tipoClase = [objClases valueForKey:@"CLASE_NOMBRE"];
                     clase.horario = [objClases valueForKey:@"CLASE_HORARIO"];
                     clase.fecha = [objClases valueForKey:@"CLASE_DIA"];
+                    
+                    [self->arregloEventos addObject:[objClases valueForKey:@"CLASE_DIA"]];
+                    
                     clase.idClase = [objClases valueForKey:@"CLASE_ID_CLASE"];
                     
                     if ([[objClases valueForKey:@"CLASE_RESPONSABLE"] isEqual:@"OLGA BELICHKO"]) {
@@ -204,10 +227,9 @@
                 }
                 
                 //NSLog(@"Clases %@", [objClases valueForKey:@"CLASE_NOMBRE"]);
-                
-                
-                
             }
+            
+            self->maFiltroClases = [self->maListaClases mutableCopy];
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 
@@ -346,6 +368,11 @@
         [self performSegueWithIdentifier:@"seguePaquete" sender:self];
         
 
+    }else if([[arregloMenu objectAtIndex:indexPath.row] isEqual:@"Galería"]){
+        
+        [self performSegueWithIdentifier:@"segueGale" sender:self];
+        
+
     }else if([[arregloMenu objectAtIndex:indexPath.row] isEqual:@"Log out"]){
         
         //exit(0);
@@ -408,6 +435,10 @@
         
         cell.imageView.image = [UIImage imageNamed:@"ubicanos"];
         
+    }else if([[arregloMenu objectAtIndex:indexPath.row] isEqual:@"Galería"]){
+        
+        cell.imageView.image = [UIImage imageNamed:@"galeria.png"];
+        
     }else{
         
         cell.imageView.image = [UIImage imageNamed:@"logout"];
@@ -417,6 +448,156 @@
     
     return cell;
 }
+
+#pragma mark - Calendario
+
+- (IBAction)btnCalen:(id)sender {
+    
+    [self mostrarCalendario];
+}
+
+-(void)mostrarCalendario{
+    
+    
+    //UIViewController *controller = [[UIViewController alloc]init];
+    CGRect rect;
+    rect = CGRectMake(0, 0, 420, 500);
+    //[controller setPreferredContentSize:rect.size];
+    
+    self.calendar = [[FSCalendar alloc]initWithFrame:CGRectMake(0, 0, 320, 400)];
+    //FSCalendar *calendar = [[FSCalendar alloc]init];
+    
+    
+    //[self.view addSubview:calendar];
+    //self.calendar = calendar;
+    self.calendar.dataSource = self;
+    self.calendar.delegate = self;
+   
+    self.calendar.translatesAutoresizingMaskIntoConstraints = false;
+
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
+    //[alertController setValue:controller forKey:@"contentViewController"];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancelar" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+
+    }];
+    [alertController addAction:cancelAction];
+
+    
+    [alertController.view addSubview:self.calendar];
+    
+    [alertController.view.heightAnchor constraintEqualToConstant:500].active = YES;
+    
+    [self.calendar.centerYAnchor constraintEqualToAnchor: alertController.view.centerYAnchor].active = YES;
+    
+    [self.calendar.centerXAnchor constraintEqualToAnchor: alertController.view.centerXAnchor].active = YES;
+    
+    [self.calendar.heightAnchor constraintEqualToConstant:400].active = YES;
+    [self.calendar.widthAnchor constraintEqualToConstant:alertController.view.frame.size.width].active = YES;
+    
+    /*[self.calendar.leadingAnchor constraintEqualToAnchor:alertController.view.leadingAnchor].active = YES;
+    [self.calendar.trailingAnchor constraintEqualToAnchor:alertController.view.trailingAnchor].active = YES;
+    [self.calendar.topAnchor constraintEqualToAnchor:alertController.view.topAnchor constant:10].active = YES;*/
+    
+    
+    self.calendar.appearance.headerMinimumDissolvedAlpha = 0.0;
+    self.calendar.today = nil;
+    self.calendar.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"es_MX"];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+        
+    
+    
+    //NSLog(@"Se presiono Fecha");
+
+    
+}
+
+
+/*- (NSInteger)calendar:(FSCalendar *)calendar numberOfEventsForDate:(NSDate*)date
+{
+    //NSString *dateString = [calendar stringFromDate:date format:@"yyyy-MM-dd"];
+
+    //NSDate *currentDate = [NSDate date];
+    
+    NSDateFormatter* formatter = [[NSDateFormatter alloc]init];
+    formatter.dateFormat = @"yyyy-MM-dd";
+    
+    NSString* dateString = [formatter stringFromDate:date];
+    
+    NSLog(@"Fecha %@",dateString);
+    //[arregloEventos addObject:@"2022-11-02"];
+    
+    if ([arregloEventos containsObject:dateString]){
+        return 1;
+    }
+    else{
+        NSLog(@"........Events List........");
+    }
+    return 0;
+}
+
+- (void)calendar:(FSCalendar *)calendar willDisplayCell:(FSCalendarCell *)cell forDate:(NSDate *)date atMonthPosition:(FSCalendarMonthPosition)monthPosition{
+    
+    cell.eventIndicator.transform = CGAffineTransformScale(cell.eventIndicator.transform, 5, 5);
+    
+}*/
+
+-(UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance fillDefaultColorForDate:(NSDate *)date{
+    
+    NSString* dateString = [self.dateFormatter stringFromDate:date];
+    
+    if ([arregloEventos containsObject:dateString]){
+        return UIColor.redColor;
+    }
+    
+    return nil;
+}
+
+- (NSDate *)minimumDateForCalendar:(FSCalendar *)calendar
+{
+    return minDate;
+}
+
+- (NSDate *)maximumDateForCalendar:(FSCalendar *)calendar
+{
+    return maxDate;
+}
+
+- (BOOL)calendar:(FSCalendar *)calendar shouldSelectDate:(NSDate *)date atMonthPosition:(FSCalendarMonthPosition)monthPosition
+{
+    
+    //NSLog(@"should select date %@",[self.dateFormatter stringFromDate:date]);
+    [self filtro:[self.dateFormatter stringFromDate:date]];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    return YES;
+}
+
+-(void)filtro:(NSString*) fechaFiltro{
+    
+    if (fechaFiltro.length == 0) {
+        
+        maListaClases = [maFiltroClases mutableCopy];
+    
+    }else{
+        
+        [maListaClases removeAllObjects];
+        
+        for (DatosClases* datos in maFiltroClases) {
+            
+            if ([datos.fecha isEqualToString:fechaFiltro]) {
+                
+                [maListaClases addObject:datos];
+            }
+        }
+        
+    }
+    
+    [self.collectionClases reloadData];
+    
+}
+
 
 #pragma mark - Menu
 
@@ -489,7 +670,5 @@
     [self setNeedsStatusBarAppearanceUpdate];
     
 }
-
-
 
 @end
