@@ -18,6 +18,8 @@
     
     [self prepararFondo];
     
+    //Hola
+    
     //self.viewMenu.translatesAutoresizingMaskIntoConstraints = YES;
     [self setNeedsStatusBarAppearanceUpdate];
 }
