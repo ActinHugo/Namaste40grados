@@ -68,9 +68,9 @@
 
 -(void)datosInterlomas{
     
-    self.lbTituloDir.text = @"Interlomas";
-    self.lbEstado.text = @"(Estado de México)";
-    self.lbDireccion.text = @"Boulevard Palmas Hills Mz 1 Lt1 Avenida, Hacienda de las Palmas Col, Hacienda de las Palmas, 52763 Méx., Mexico";
+    self.lbTituloDir.text = @"Próximamente";
+    self.lbEstado.text = @"";
+    self.lbDireccion.text = @"";
     [self.lbDireccion sizeToFit];
 }
 
@@ -79,12 +79,14 @@
 - (IBAction)btnPalm:(id)sender {
     
     if (!selecPalma) {
-        [sender setImage:[UIImage imageNamed:@"interlomas_on"] forState:UIControlStateSelected];
+        [sender setImage:[UIImage imageNamed:@"proximamente_on"] forState:UIControlStateSelected];
         [sender setSelected:YES];
         [self.ivEsme setImage:[UIImage imageNamed:@"esmeralda_off"] forState:UIControlStateNormal];
         [self.ivEsme setSelected:NO];
         selecEsme = NO;
         selecPalma = YES;
+        [self.ivWaze setEnabled:NO];
+        [self.ivMapa setEnabled:NO];
         [self datosInterlomas];
     }
 }
@@ -94,10 +96,12 @@
     if (!selecEsme) {
         [sender setImage:[UIImage imageNamed:@"esmeralda_on"] forState:UIControlStateSelected];
         [sender setSelected:YES];
-        [self.ivPalma setImage:[UIImage imageNamed:@"interlomas_off"] forState:UIControlStateNormal];
+        [self.ivPalma setImage:[UIImage imageNamed:@"proximamente_off"] forState:UIControlStateNormal];
         [self.ivPalma setSelected:NO];
         selecEsme = YES;
         selecPalma = NO;
+        [self.ivWaze setEnabled:YES];
+        [self.ivMapa setEnabled:YES];
         [self datosEsmeralda];
     }/*else{
         [sender setImage:[UIImage imageNamed:@"esmeralda_off"] forState:UIControlStateSelected];

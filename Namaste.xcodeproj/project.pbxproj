@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25020898293AAF9000262BC4 /* proximamente_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 25020894293AAF9000262BC4 /* proximamente_off.png */; };
+		25020899293AAF9000262BC4 /* liliana_torrijos.png in Resources */ = {isa = PBXBuildFile; fileRef = 25020895293AAF9000262BC4 /* liliana_torrijos.png */; };
+		2502089A293AAF9000262BC4 /* gian_franco.png in Resources */ = {isa = PBXBuildFile; fileRef = 25020896293AAF9000262BC4 /* gian_franco.png */; };
+		2502089B293AAF9000262BC4 /* proximamente_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 25020897293AAF9000262BC4 /* proximamente_on.png */; };
+		2502089E293AB0F500262BC4 /* eliminar_cuenta.png in Resources */ = {isa = PBXBuildFile; fileRef = 2502089C293AB0F500262BC4 /* eliminar_cuenta.png */; };
+		2502089F293AB0F500262BC4 /* power_wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 2502089D293AB0F500262BC4 /* power_wheel.png */; };
 		250D4145287E9C1D00AAF532 /* DatosSalones.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D4144287E9C1D00AAF532 /* DatosSalones.m */; };
 		250D4148287EAA3000AAF532 /* DatosClasesReservar.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D4147287EAA3000AAF532 /* DatosClasesReservar.m */; };
 		250FB3A528BFE8B90071624D /* adri_gari_vaz.png in Resources */ = {isa = PBXBuildFile; fileRef = 250FB3A428BFE8B90071624D /* adri_gari_vaz.png */; };
@@ -128,6 +134,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25020894293AAF9000262BC4 /* proximamente_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proximamente_off.png; sourceTree = "<group>"; };
+		25020895293AAF9000262BC4 /* liliana_torrijos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liliana_torrijos.png; sourceTree = "<group>"; };
+		25020896293AAF9000262BC4 /* gian_franco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gian_franco.png; sourceTree = "<group>"; };
+		25020897293AAF9000262BC4 /* proximamente_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proximamente_on.png; sourceTree = "<group>"; };
+		2502089C293AB0F500262BC4 /* eliminar_cuenta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eliminar_cuenta.png; sourceTree = "<group>"; };
+		2502089D293AB0F500262BC4 /* power_wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = power_wheel.png; sourceTree = "<group>"; };
 		250D4143287E9C1D00AAF532 /* DatosSalones.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatosSalones.h; sourceTree = "<group>"; };
 		250D4144287E9C1D00AAF532 /* DatosSalones.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatosSalones.m; sourceTree = "<group>"; };
 		250D4146287EAA3000AAF532 /* DatosClasesReservar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatosClasesReservar.h; sourceTree = "<group>"; };
@@ -419,7 +431,13 @@
 		259F1DE32864C78000925947 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				25020896293AAF9000262BC4 /* gian_franco.png */,
+				25020895293AAF9000262BC4 /* liliana_torrijos.png */,
+				25020894293AAF9000262BC4 /* proximamente_off.png */,
+				25020897293AAF9000262BC4 /* proximamente_on.png */,
 				251BFCA52911C0DE0068E20E /* calen_clases.png */,
+				2502089C293AB0F500262BC4 /* eliminar_cuenta.png */,
+				2502089D293AB0F500262BC4 /* power_wheel.png */,
 				25216AAE29148F7E009FBB10 /* gal1.png */,
 				25216AAB29148F7D009FBB10 /* gal2.png */,
 				25216AAA29148F7D009FBB10 /* gal3.png */,
@@ -602,6 +620,7 @@
 				2552AE6228AD8DDE005FFD82 /* yoga_kids.png in Resources */,
 				253FA53028AC1C9C008B0A3D /* boton_caliente.png in Resources */,
 				259F1DDB2864C76D00925947 /* signup_fondo.png in Resources */,
+				2502089F293AB0F500262BC4 /* power_wheel.png in Resources */,
 				2541B00B287F28E600AE5C23 /* icono_reservar.png in Resources */,
 				25F75F38289918E200E01907 /* horarios.png in Resources */,
 				2552AE6128AD8DDE005FFD82 /* bikram.png in Resources */,
@@ -618,6 +637,7 @@
 				251BFCAA2912FD9F0068E20E /* division.png in Resources */,
 				251BFCA62911C0DE0068E20E /* calen_clases.png in Resources */,
 				25F75F41289918E200E01907 /* salon_tradicional.png in Resources */,
+				2502089B293AAF9000262BC4 /* proximamente_on.png in Resources */,
 				2586D4C828DCBED0008CDADB /* hot_rocket.png in Resources */,
 				259F1DE02864C76D00925947 /* imag_chica_redondeado.png in Resources */,
 				2541B00A287F28E600AE5C23 /* icono_qr.png in Resources */,
@@ -639,12 +659,15 @@
 				25AA79B328BD136D0076744D /* horas.jpeg in Resources */,
 				259F1DD52864C76D00925947 /* icono_qr_off.png in Resources */,
 				25B3856B28A38C34004EFA30 /* interlomas_off.png in Resources */,
+				25020899293AAF9000262BC4 /* liliana_torrijos.png in Resources */,
 				251849B428B7E39400735C96 /* paquete_img.jpg in Resources */,
 				25216AB029148F7E009FBB10 /* gal7.png in Resources */,
+				25020898293AAF9000262BC4 /* proximamente_off.png in Resources */,
 				2552AE5E28AD8DDE005FFD82 /* s_caliente.png in Resources */,
 				25F75F42289918E200E01907 /* esmeralda_off.png in Resources */,
 				250FB3AF28BFE8C60071624D /* olga_belichko.png in Resources */,
 				25B3856A28A38C34004EFA30 /* conocenos_fondo.png in Resources */,
+				2502089E293AB0F500262BC4 /* eliminar_cuenta.png in Resources */,
 				2552AE6828ADD5F8005FFD82 /* Assets.xcassets in Resources */,
 				259F1DB32864C4AD00925947 /* Main.storyboard in Resources */,
 				253FA52628AB5AB5008B0A3D /* tache.png in Resources */,
@@ -652,6 +675,7 @@
 				250FB3AD28BFE8C60071624D /* laura.png in Resources */,
 				25F75F3E289918E200E01907 /* palmas_on.png in Resources */,
 				258E8E3628C3E6C300846711 /* trx.png in Resources */,
+				2502089A293AAF9000262BC4 /* gian_franco.png in Resources */,
 				25F75F3B289918E200E01907 /* salones.png in Resources */,
 				259F1DDF2864C76D00925947 /* icono_app.png in Resources */,
 				25B3856828A38C34004EFA30 /* nuestra_clase.png in Resources */,
@@ -850,14 +874,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_TEAM = 68S5NC6ZHR;
 				INFOPLIST_FILE = Namaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.actin.apps.Namaste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -870,14 +894,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_TEAM = 68S5NC6ZHR;
 				INFOPLIST_FILE = Namaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.actin.apps.Namaste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;

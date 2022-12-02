@@ -63,6 +63,7 @@
     [arregloMenu addObject:@"Ubícanos"];
     [arregloMenu addObject:@"Galería"];
     [arregloMenu addObject:@"Log out"];
+    [arregloMenu addObject:@"Eliminar cuenta"];
     
     self.viewMenu.backgroundColor = [UIColor whiteColor];
     self.viewMenu.opaque = NO;
@@ -223,6 +224,26 @@
         
         [self presentViewController:alertController animated:true completion:nil];
         
+    }else if([[arregloMenu objectAtIndex:indexPath.row] isEqual:@"Eliminar cuenta"]){
+        
+        //exit(0);
+        
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"Eliminar cuenta"] message:[NSString stringWithFormat:@"Una vez que acepte se eliminaran sus datos junto con sus clases reservadas ¿Desea continuar con la eliminación de su cuenta?"] preferredStyle:UIAlertControllerStyleAlert];
+        //[alertController setValue:controller forKey:@"contentViewController"];
+        
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancelar" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+
+        }];
+        [alertController addAction:cancelAction];
+        UIAlertAction *aceptar = [UIAlertAction actionWithTitle:@"Aceptar" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+
+            [self eleminarCuenta];
+            
+        }];
+        [alertController addAction:aceptar];
+        
+        [self presentViewController:alertController animated:true completion:nil];
+        
     }
     
     [self escondeAccion];
@@ -269,6 +290,10 @@
     }else if([[arregloMenu objectAtIndex:indexPath.row] isEqual:@"Galería"]){
         
         cell.imageView.image = [UIImage imageNamed:@"galeria.png"];
+        
+    }else if([[arregloMenu objectAtIndex:indexPath.row] isEqual:@"Eliminar cuenta"]){
+        
+        cell.imageView.image = [UIImage imageNamed:@"eliminar_cuenta.png"];
         
     }else{
         
@@ -406,4 +431,75 @@
     [urlSession resume];
     
 }
+
+-(void)eleminarCuenta{
+    
+    MBProgressHUD* progreso = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    progreso.mode = MBProgressHUDModeIndeterminate;
+    progreso.label.text = @"Eliminando Cuenta";
+    
+    NSString* url = [NSString stringWithFormat:@"https://www.actinseguro.com/booking/abkcom014.aspx?%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"ID"]];
+    
+    NSLog(@"URL a eliminar %@",url);
+    
+    NSURL* urlData = [NSURL URLWithString:url];
+    
+    NSURLSessionDataTask* urlSession = [[NSURLSession sharedSession] dataTaskWithURL:urlData completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        if (data != nil) {
+            
+            NSString* respuesta = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            
+            NSLog(@"%@",respuesta);
+            
+            NSError* errorJson;
+        
+            
+            NSDictionary* jsonObject = (NSDictionary*)[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&errorJson];
+            
+            NSString* respElimina = [jsonObject valueForKey:@"MSG"];
+            
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
+                
+                if ([respElimina isEqual:@"EL USUARIO HA SIDO ELIMINADO"]) {
+                    
+                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@""] message:[NSString stringWithFormat:@"Su cuenta ha sido eliminada"] preferredStyle:UIAlertControllerStyleAlert];
+                    
+                
+                    UIAlertAction *aceptar = [UIAlertAction actionWithTitle:@"Aceptar" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+
+                        [self.presentingViewController  dismissViewControllerAnimated:NO completion:nil];
+                        
+                    }];
+                    [alertController addAction:aceptar];
+                    
+                    [self presentViewController:alertController animated:true completion:nil];
+                }else{
+                    
+                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@""] message:[NSString stringWithFormat:@"Ocurrio un problema al eliminar su cuenta, consulte con soporte técnico"] preferredStyle:UIAlertControllerStyleAlert];
+                    
+                
+                    UIAlertAction *aceptar = [UIAlertAction actionWithTitle:@"Aceptar" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+
+                                            
+                    }];
+                    [alertController addAction:aceptar];
+                    
+                    [self presentViewController:alertController animated:true completion:nil];
+                }
+                
+            });
+            
+        }
+        
+    }];
+    
+    [urlSession resume];
+    
+}
+
 @end

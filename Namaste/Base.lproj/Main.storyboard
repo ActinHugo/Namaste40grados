@@ -335,10 +335,10 @@
                                 </connections>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nbe-sx-VFQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XAC-og-c0s">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="480"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
@@ -372,7 +372,7 @@
                                     <constraint firstItem="XAC-og-c0s" firstAttribute="leading" secondItem="Nbe-sx-VFQ" secondAttribute="leading" id="UZe-qV-REa"/>
                                     <constraint firstAttribute="trailing" secondItem="XAC-og-c0s" secondAttribute="trailing" id="WSM-nu-NdK"/>
                                     <constraint firstAttribute="bottom" secondItem="XAC-og-c0s" secondAttribute="bottom" id="b0C-cl-cfr"/>
-                                    <constraint firstAttribute="height" constant="480" id="pwv-nF-AOX"/>
+                                    <constraint firstAttribute="height" constant="520" id="pwv-nF-AOX"/>
                                     <constraint firstItem="XAC-og-c0s" firstAttribute="top" secondItem="Nbe-sx-VFQ" secondAttribute="top" id="yul-dV-iFU"/>
                                 </constraints>
                             </view>
@@ -665,10 +665,10 @@
                                 </connections>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scf-tG-LCr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3QU-Mp-LDq">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="480"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
@@ -698,7 +698,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="480" id="KWR-yA-3lh"/>
+                                    <constraint firstAttribute="height" constant="520" id="KWR-yA-3lh"/>
                                     <constraint firstItem="3QU-Mp-LDq" firstAttribute="leading" secondItem="scf-tG-LCr" secondAttribute="leading" id="Mg9-eZ-Lpl"/>
                                     <constraint firstAttribute="bottom" secondItem="3QU-Mp-LDq" secondAttribute="bottom" id="XzJ-0b-YM8"/>
                                     <constraint firstAttribute="trailing" secondItem="3QU-Mp-LDq" secondAttribute="trailing" id="na3-LM-6WB"/>
@@ -860,10 +860,10 @@
                                 </connections>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LxS-M7-ScV">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l7v-68-l62">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="480"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
@@ -898,7 +898,7 @@
                                     <constraint firstItem="l7v-68-l62" firstAttribute="top" secondItem="LxS-M7-ScV" secondAttribute="top" id="kNE-32-ZT3"/>
                                     <constraint firstAttribute="trailing" secondItem="l7v-68-l62" secondAttribute="trailing" id="rCa-nn-Yx8"/>
                                     <constraint firstAttribute="bottom" secondItem="l7v-68-l62" secondAttribute="bottom" id="uRC-OC-w5Y"/>
-                                    <constraint firstAttribute="height" constant="480" id="zgo-U1-g1m"/>
+                                    <constraint firstAttribute="height" constant="520" id="zgo-U1-g1m"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -2439,7 +2439,7 @@ Aquí en 40 grados hot yoga, te familiarizarás con varias prácticas y podrás 
                                     <constraint firstAttribute="height" constant="179" id="4AG-H8-qBw"/>
                                     <constraint firstAttribute="width" constant="93" id="6wi-0Q-iGO"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="interlomas_off.png"/>
+                                <state key="normal" title="Button" image="proximamente_off.png"/>
                                 <connections>
                                     <action selector="btnPalm:" destination="vbg-p7-WqG" eventType="touchUpInside" id="957-X7-DpW"/>
                                 </connections>
@@ -2812,7 +2812,7 @@ Aquí en 40 grados hot yoga, te familiarizarás con varias prácticas y podrás 
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Wry-Wl-HcL"/>
                                 </constraints>
-                                <string key="text">Estimado alumno para tu comodidad los pagos de paquetes pueden ser realizados directamente en nuestro estudio a travez de los siguientes métodos: Efectivo, Tarjeta bancaria o Transferencia.</string>
+                                <string key="text">Estimado alumno para tu comodidad los pagos de paquetes pueden ser realizados directamente en nuestro estudio a través de los siguientes métodos: Efectivo, Tarjeta bancaria o Transferencia.</string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -3045,12 +3045,12 @@ Aquí en 40 grados hot yoga, te familiarizarás con varias prácticas y podrás 
         <image name="icono_qr.png" width="30" height="30"/>
         <image name="icono_reservar.png" width="30" height="30"/>
         <image name="img_qr.png" width="640" height="445"/>
-        <image name="interlomas_off.png" width="167" height="315"/>
         <image name="login_fondo.png" width="640" height="1136"/>
         <image name="logo.png" width="147" height="206"/>
         <image name="maps.png" width="42" height="42"/>
         <image name="men｣.png" width="48" height="48"/>
         <image name="paquete_img.jpg" width="752" height="1024"/>
+        <image name="proximamente_off.png" width="167" height="315"/>
         <image name="s_caliente.png" width="640" height="699"/>
         <image name="signup_fondo.png" width="640" height="1136"/>
         <image name="tache.png" width="48" height="48"/>

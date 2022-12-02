@@ -60,11 +60,17 @@
     [arregloClases addObject:objeto];
     
     objeto = [ObjetoClase alloc];
+    objeto.titulo = @"POWER WHEEL";
+    objeto.imagen = @"power_wheel.png";
+    objeto.descripcion = @"Es una clase de 60 minutos donde saldrás de tu zona de confort trabajando todos los músculos de tu cuerpo y todo esto para la mejora de tu práctica de yoga !!! Aquí ganarás FUERZA , MOVILIDAD, EQUILIBRÓ y FLEXIBILIDAD!!!";
+    
+    [arregloClases addObject:objeto];
+    /*objeto = [ObjetoClase alloc];
     objeto.titulo = @"HOT ROCKET";
     objeto.imagen = @"hot_rocket.png";
     objeto.descripcion = @"Es una variación de Ashtanga Vinyasa Yoga, con menos respiraciones en cada postura. En Hot Rocket se estimula el sistema nervioso, mejorando fuerza y flexibilidad. Su ritmo es dinámico e incluye también invertidas y posturas de equilibrio.";
     
-    [arregloClases addObject:objeto];
+    [arregloClases addObject:objeto];*/
     
     objeto = [ObjetoClase alloc];
     objeto.titulo = @"YOGA KIDS";
