@@ -1997,7 +1997,7 @@
                                     <outlet property="delegate" destination="QEp-1S-l7X" id="8Ty-zc-zIc"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGS-F0-ZfU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefono (Opcional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGS-F0-ZfU">
                                 <rect key="frame" x="20" y="419" width="335" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="Ikq-Yo-2WU"/>
@@ -3019,7 +3019,7 @@ Aquí en 40 grados hot yoga, te familiarizarás con varias prácticas y podrás 
         <segue reference="xlZ-eX-pGz"/>
         <segue reference="vFF-Br-tKD"/>
         <segue reference="2r7-qV-8kY"/>
-        <segue reference="qoO-qR-Cvz"/>
+        <segue reference="CJv-QK-TGh"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>

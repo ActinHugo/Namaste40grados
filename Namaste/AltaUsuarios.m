@@ -103,12 +103,15 @@
     
     NSString* url = @"http://actinseguro.com/booking/abkcom002.aspx";
     
-    NSDictionary* json = @{ @"CIA": [[NSUserDefaults standardUserDefaults] objectForKey:@"CIA"],
-                            @"NOMBRE": self.nombre.text,
-                            @"CORREO" : self.correo.text,
-                            @"TELEFONO" : self.telefono.text,
+
+
+    
+    NSDictionary* json = @{ @"CIA": @"1",
+                            @"NOMBRE": (self.nombre.text != nil ? self.nombre.text : @""),
+                            @"CORREO" : (self.correo.text != nil ? self.correo.text : @""),
+                            @"TELEFONO" : (self.telefono.text != nil ? self.telefono.text : @""),
                             @"PAQUETE" : @"",
-                            @"PASSWORD" : self.pass.text
+                            @"PASSWORD" : (self.pass.text != nil ? self.pass.text : @"")
     };
     
     /*NSArray *titulos = [NSArray arrayWithObjects:
